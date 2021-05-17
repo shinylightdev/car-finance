@@ -10,7 +10,7 @@ let f = {};
 f.MSRP         = 33125; // MSRP
 f.downPayment  = 4000;  // Down Payment - Dealers typicall want < 50%
 f.monthsToPay  = 48;    // Terms of Finance
-f.APR          = .9;   // APR
+f.APR          = 0.9;   // APR
 // ==========================================================================
 
 
@@ -56,7 +56,7 @@ Down Payment =============> ${formatter.format(f.downPayment)}
 Months To Pay ============> ${f.monthsToPay} months
 APR ======================> ${f.APR}%
 
-Monthly Payment ==========> ${formatter.format(f.monthlyPay)}
+Monthly Payment ==========> ${formatter.format(f.monthlyPay)} (approx; w/o amortization)
 Due at Signing ===========> ${formatter.format(f.dueAtSigning)}
 Total After All Paid =====> ${formatter.format(f.totalAfterPaid)}
 `;
