@@ -7,8 +7,8 @@ let f = {};
 // ==========================================================================
 // CUSTOMIZE
 // ==========================================================================
-f.MSRP         = 33125; // MSRP
-f.downPayment  = 4000;  // Down Payment - Dealers typicall want < 50%
+f.MSRP         = 33125; // MSRP OR Selling Price
+f.downPayment  = 6000;  // Down Payment - Dealers typicall want < 50%
 f.monthsToPay  = 48;    // Terms of Finance
 f.APR          = 0.9;   // APR
 // ==========================================================================
@@ -48,10 +48,10 @@ f.totalAfterPaid = f.dueAtSigning + (f.monthlyPay * f.actualMonthsToPayAfter);
 // Show it.
 let template = 
 `
-MSRP =====================> ${formatter.format(f.MSRP)}
+MSRP / Selling ===========> ${formatter.format(f.MSRP)}
 
 Total With Tax ===========> ${formatter.format(f.totalWithTax)}
-Loan Amount ==============> ${formatter.format(f.loanAmount)}
+Loan Amount ==============> ${formatter.format(f.loanAmount)} (bank Loan)
 Down Payment =============> ${formatter.format(f.downPayment)}
 Months To Pay ============> ${f.monthsToPay} months
 APR ======================> ${f.APR}%
@@ -62,3 +62,5 @@ Total After All Paid =====> ${formatter.format(f.totalAfterPaid)}
 `;
 
 console.log(template);
+
+

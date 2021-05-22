@@ -40,3 +40,8 @@ Monthly Payment ==========> $681.69 (approx; w/o amortization)
 Due at Signing ===========> $4,681.69
 Total After All Paid =====> $36,721.06
 ```
+
+## Helpful Online Tools
+
+- [Auto Loan Amortization Calculator](https://www.arborfcu.org/Borrow/Loans/Vehicle-Loans/New-Used-Auto-Loans/Amortization-Calculator)
+- [Auto Loan Calculator](https://www.amortization-calc.com/auto-car-loan-calculator/)
